@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const CourseCard = ({ course }) => {
   return (
@@ -21,7 +22,7 @@ const CourseCard = ({ course }) => {
           <p>Rating: {course.rating}</p>
         </div>
         <div className="card-actions">
-          <button className="btn btn-primary">Show Details</button>
+          <Link href={`/courses/${course.id}`}><button className="btn btn-primary">Show Details</button></Link>
         </div>
       </div>
     </div>
