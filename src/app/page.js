@@ -1,7 +1,12 @@
 import Image from "next/image";
+import HeroSection from "../../components/HeroSection";
+import PopularCoursesSecton from "../../components/PopularCoursesSection";
 
 export default function Home() {
   return (
-    <h1>starting the project...</h1>
+    <>
+      <HeroSection />
+      <PopularCoursesSecton />
+    </>
   );
 }
