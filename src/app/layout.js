@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       className='h-full antialiased'
     >
       {/* ${geistSans.variable} ${geistMono.variable} */}
-      <body className={` min-h-full flex flex-col`}>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <Navbar />
         {children}
         <Footer />
